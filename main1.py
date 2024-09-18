@@ -21,7 +21,7 @@ required_columns = ['FBv', 'FIP', 'IP', 'LA', 'Barrels', 'Barrel%', 'maxEV', 'Ha
                     'HardHit%', 'K%', 'BB%', 'K-BB%', 'SIERA', 'O-Swing%', 'Z-Swing%',
                     'Swing%', 'O-Contact%', 'Z-Contact%', 'Contact%', 'Zone%', 'F-Strike%',
                     'SwStr%', 'CStr%', 'C+SwStr%', 'AVG', 'WHIP', 'BABIP', 'LD%', 'GB%',
-                    'FB%', 'ERA']
+                    'FB%', 'ERA', 'WAR']
 
 # Raise an error if any required column is missing
 for col in required_columns:
