@@ -59,9 +59,9 @@ def plot_stat(stat):
     plt.text(0.05, 0.95, f'$R^2 = {r_squared:.2f}$', transform=plt.gca().transAxes, fontsize=14, verticalalignment='top')
 
     # Add plot title and labels
-    plt.title(f'{stat} vs ERA (Pitchers with minimum 50 IP)', fontsize=16)
+    plt.title(f'{stat} vs WAR (Pitchers with minimum 50 IP)', fontsize=16)
     plt.xlabel(stat, fontsize=14)
-    plt.ylabel('Earned Run Average (ERA)', fontsize=14)
+    plt.ylabel('WINS ABOVE REPLACEMENT (WAR)', fontsize=14)
     plt.grid(True)
 
     st.pyplot(plt)
