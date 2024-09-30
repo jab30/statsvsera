@@ -38,11 +38,11 @@ df_filtered = df[df['IP'] >= 50].dropna(subset=required_columns)
 # Function to plot the selected stat
 def plot_stat(stat):
     plt.figure(figsize=(10, 6))
-    plt.scatter(df_filtered[stat], df_filtered['ERA'], alpha=0.7, color='blue')
+    plt.scatter(df_filtered[stat], df_filtered['WAR'], alpha=0.7, color='blue')
 
     # Fit a linear regression model to get R²
     X = df_filtered[[stat]]
-    y = df_filtered['ERA']
+    y = df_filtered['WAR']
     model = LinearRegression()
     model.fit(X, y)
 
